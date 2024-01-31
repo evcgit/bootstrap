@@ -1,4 +1,4 @@
-@use 'base';
+$contrast-color: #8b37ff;
 
 * {
     padding: 0;
@@ -7,10 +7,10 @@
 
 body {
     background-image: url(./images/computer-screen-with-python-code.png);
-    height: 100vh;
+    height: 95vh;
     background-size: 100% 100%;
     
-    div {
+    .container {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -22,7 +22,7 @@ body {
         }
     }
     .purpleBrackets {
-        color: base.$contrast-color;
+        color: $contrast-color;
     }
 }
 
@@ -32,7 +32,7 @@ h1 {
 }
 
 button {
-    background-color: base.$contrast-color;
+    background-color: $contrast-color;
     padding: .6em 2em;
     font-size: 1.5vw;
     border-radius: 2rem;
@@ -42,6 +42,13 @@ button {
 }
 
 nav {
-    background-color: white;
-    z-index: -1;
+    background-color: whitesmoke;
+    margin-top: 30vh;
 }
+
+@media (max-width: 500px) {
+    nav {
+        margin-top: 20vh;
+    }
+}
+

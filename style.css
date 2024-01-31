@@ -5,17 +5,17 @@
 
 body {
   background-image: url(./images/computer-screen-with-python-code.png);
-  height: 100vh;
+  height: 95vh;
   background-size: 100% 100%;
 }
-body div {
+body .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   color: white;
   margin-top: 6vh;
 }
-body div h4, body div h5 {
+body .container h4, body .container h5 {
   font-size: 2vw;
 }
 body .purpleBrackets {
@@ -38,6 +38,12 @@ button {
 }
 
 nav {
-  background-color: white;
-  z-index: -1;
+  background-color: whitesmoke;
+  margin-top: 30vh;
+}
+
+@media (max-width: 500px) {
+  nav {
+    margin-top: 20vh;
+  }
 }/*# sourceMappingURL=style.css.map */
