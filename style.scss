@@ -9,6 +9,7 @@ body {
     background-image: url(./images/computer-screen-with-python-code.png);
     height: 95vh;
     background-size: 100% 100%;
+    background-repeat: no-repeat;
     
     .container {
         display: flex;
@@ -43,12 +44,6 @@ button {
 
 nav {
     background-color: whitesmoke;
-    margin-top: 30vh;
 }
 
-@media (max-width: 500px) {
-    nav {
-        margin-top: 20vh;
-    }
-}
 
